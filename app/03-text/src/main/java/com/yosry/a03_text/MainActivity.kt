@@ -6,13 +6,19 @@ import androidx.activity.compose.setContent
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.text.ClickableText
 import androidx.compose.foundation.text.selection.SelectionContainer
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.text.AnnotatedString
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
@@ -36,10 +42,11 @@ class MainActivity : ComponentActivity() {
         }
     }
 }
-
 @Preview
 @Composable
 fun SimpleApp(){
+    var enabled by remember { mutableStateOf(true)}
+
     Column {
         TextWithSize()
         ColorText()
@@ -48,6 +55,16 @@ fun SimpleApp(){
         MaxLines()
         OverflowedText()
         SelectableText()
+
+        var text = "HI"
+        ClickableText(
+            text = AnnotatedString(text = text) ,
+            onClick = {
+                if (enabled) {
+                    enabled = false
+                     text = "Disabled"
+                }
+            })
     }
 }
 @Composable

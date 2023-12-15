@@ -13,6 +13,7 @@
             <option value="$PROJECT_DIR$/app/01-introduction" />
             <option value="$PROJECT_DIR$/app/02-rowcolumn" />
             <option value="$PROJECT_DIR$/app/03-text" />
+            <option value="$PROJECT_DIR$/app/04-buttons" />
           </set>
         </option>
         <option name="resolveExternalAnnotations" value="false" />

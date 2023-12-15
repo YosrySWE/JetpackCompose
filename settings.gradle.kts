@@ -21,4 +21,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "Compose"
 include(":app")
-include(":app:introduction")
+include(":app:01-introduction")
+include(":app:02-rowcolumn")

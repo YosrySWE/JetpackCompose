@@ -23,3 +23,4 @@ rootProject.name = "Compose"
 include(":app")
 include(":app:01-introduction")
 include(":app:02-rowcolumn")
+include(":app:03-text")

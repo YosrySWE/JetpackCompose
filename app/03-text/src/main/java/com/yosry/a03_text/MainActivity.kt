@@ -3,6 +3,7 @@ package com.yosry.a03_text
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.text.selection.SelectionContainer
@@ -59,7 +60,7 @@ fun TextWithSize(){
 
 @Composable
 fun ColorText() {
-    Text("Color text", color = Color.Blue)
+    Text("Color text", Modifier.background(Color.Red) ,color = Color.Blue)
 }
 @Composable
 fun BoldText() {

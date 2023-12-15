@@ -10,7 +10,8 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/app/introduction" />
+            <option value="$PROJECT_DIR$/app/01-introduction" />
+            <option value="$PROJECT_DIR$/app/02-rowcolumn" />
           </set>
         </option>
         <option name="resolveExternalAnnotations" value="false" />

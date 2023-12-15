@@ -24,7 +24,7 @@
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
       <SelectionState runConfigName="app.03-text">
-        <option name="selectionMode" value="DIALOG" />
+        <option name="selectionMode" value="DROPDOWN" />
         <DropdownSelection timestamp="2023-12-15T13:39:06.207616700Z">
           <Target type="DEFAULT_BOOT">
             <handle>
